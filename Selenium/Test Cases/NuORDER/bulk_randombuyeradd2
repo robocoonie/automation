@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://wholesale.dev.nuorder.com/" />
+<title>Bulk_RandomCompanyAdd</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bulk_RandomCompanyAdd</td></tr>
+</thead><tbody>
+<tr>
+	<td>getEval</td>
+	<td>storedVars['ord'] = 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>prod = storedVars['prod'];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${ord}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${prod}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${ord} &lt; ${prod};</td>
+	<td></td>
+</tr>
+<!--Start Loop-->
+<tr>
+	<td>click</td>
+	<td>//section[@id='application']/nav/ul/li[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='alpha_list']/ol[2]/li[2]</td>
+	<td>N</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section[@id='contacts']/nav/ul/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='add_new_user']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>5,alphalower</td>
+	<td>coname</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>3,alpha</td>
+	<td>con2</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[contains(@id,'select_chzn')]/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='company_select_chzn_o_${ord}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>${coname} ${con2}${con2}</td>
+</tr>
+<tr>
+	<td>type </td>
+	<td>name=email</td>
+	<td>${coname}@website.${con2}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[starts-with(@id,'sel') and contains(@id, '_chzn')]/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[starts-with(@id,'sel') and contains(@id,'_chzn_o_1')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='form_save']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='notification_notify']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=notification_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>[storedVars['ord']++];</td>
+	<td></td>
+</tr>
+<!--End Loop-->
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${prod}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "name": "TCOM-ResponsivePlus",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/icrossing-lee/learn-sauce",
+  "author": {
+    "name": "icrossing-lee",
+    "email": "lee.almodovar@icrossing.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icrossing-lee/learn-sauce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/icrossing-lee/learn-sauce/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/icrossing-lee/learn-sauce/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/TCOM-ResponsivePlus",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-env": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-simple-mocha": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-watch": "latest",
+    "wd": "latest",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "lodash": "latest",
+    "colors": "latest",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://riff.jukinmedia.com/" />
+<title>PrevNextLP</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PrevNextLP</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>prompt('Environment to test, include period. (funk-qa.) OK for Prod')</td>
+	<td>env</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://${env}jukinmedia.com/videos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>prompt('How many times to test clicks?');</td>
+	<td>boo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='next-videos1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>prompt('Enter a JV ID from the All Videos on this page');</td>
+	<td>jv1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='next-videos1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>prompt('Enter a JV ID from the All Videos on this page')</td>
+	<td>jv2</td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${boo}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>storedVars['moo'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${moo}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>storedVars['paws'] = 2000;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${paws}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://${env}jukinmedia.com/videos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='next-videos1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='next-videos1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${moo} &lt; ${boo};</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@id='next-videos']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${paws}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='video-box-${jv2}']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='prev-videos']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@id='next-videos']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${paws}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='video-box-${jv1}']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='next-videos']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>{storedVars['moo']++};</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>{storedVars['paws']-100};</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

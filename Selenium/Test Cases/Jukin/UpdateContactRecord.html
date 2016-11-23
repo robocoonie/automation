@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://riff-uat.jukinmedia.com/" />
+<title>UpdateContactRecord</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UpdateContactRecord</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='contactPage']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>4,alphanumeric</td>
+	<td>new</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=emailInput</td>
+	<td>quality+${new}@jukinmedia.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='paymentMethod.type'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=vendorName</td>
+	<td>Jukin Media, Inc. (${new})</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>Rami</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>Siriani</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addresses[0].address</td>
+	<td>5764 W Jefferson Blvd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addresses[0].city</td>
+	<td>Los Angeles</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addresses[0].state</td>
+	<td>CA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addresses[0].zipCode</td>
+	<td>CA</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=countrySelect</td>
+	<td>label=United States</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phoneNumber</td>
+	<td>555-555-5555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paypalEmail</td>
+	<td>111aidnfs@example.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=occupation</td>
+	<td>QA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=age</td>
+	<td>31</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentMethod.routingNumber</td>
+	<td>32271627</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentMethod.accountNumber</td>
+	<td>924518384</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=paysTaxesRadio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=smType</td>
+	<td>label=Vimeo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=smUsername</td>
+	<td>tester</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=emailInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=vendorName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveButton</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
