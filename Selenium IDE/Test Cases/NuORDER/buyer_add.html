@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://wholesale.dev.nuorder.com/" />
+<title>buyer_add</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">buyer_add</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//section[@id='sales_rep_0']/div/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='company_select_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='company_select_chzn']/div/div/input</td>
+	<td>Mystical ${coname}nation</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='company_select_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='company_select_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='company_select_chzn']/div/ul/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<!--why!?-->
+<tr>
+	<td>verifyNotText</td>
+	<td>//div[@id='company_select_chzn']/a/span</td>
+	<td>Company Name</td>
+</tr>
+<!--Company Selected!-->
+<tr>
+	<td>randomString</td>
+	<td>2,alphalower</td>
+	<td>ln</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>5,alphalower</td>
+	<td>ename</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>10,numeric</td>
+	<td>phoneo</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>10,numeric</td>
+	<td>phonec</td>
+</tr>
+<!--Buyer Name & Email-->
+<tr>
+	<td>type</td>
+	<td>//section[@id='buyer_details']/div/input</td>
+	<td>Sh${ln}mus McD${ln}ggle</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//section[@id='buyer_details']/div[2]/input</td>
+	<td>${ename}@mailinator.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//section[@id='buyer_details']/div[4]/input</td>
+	<td>${ln}${ename}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//section[@id='buyer_details']/div[5]/input</td>
+	<td>${phoneo}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//section[@id='buyer_details']/div[7]/input</td>
+	<td>${phonec}</td>
+</tr>
+<!--Sales Rep-->
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='selFRC_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='selFRC_chzn']/div/ul/li[2]</td>
+	<td></td>
+</tr>
+<!--Save!-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='form_save']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='notification_notify']/div/div</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

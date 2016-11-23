@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.com/" />
+<title>ProductSelect</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ProductSelect</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>prompt('Products Randomize Range (at least 10)?');</td>
+	<td>prod</td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>ord = 0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>stringConvert</td>
+	<td>${prod}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>ord &lt; ${prod};</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{[Math.floor((Math.random()*storedVars['prod'])+2)]}</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[contains(@id,'product_')][${num}]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='add_to_order']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>ord++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

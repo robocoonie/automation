@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://riff.jukinvideo.com/" />
+<title>ProductionPush</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ProductionPush</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeTitle</td>
+	<td>Login</td>
+	<td>startpage</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/user/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['startpage']=='Login'</td>
+	<td>LOGIN</td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>START</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>LOGIN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='username']</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='password']</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@id='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>START</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>ord = 0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>ord &lt; 10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li[2]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li[3]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li[4]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='main-menu-toggle']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='main-menu-toggle']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.navbar-brand &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(@href, '/settings/admin')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Users')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '#')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Profile')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-left']/div/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyLocation </td>
+	<td>http://riff.jukinvideo.com/user/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>ord++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://riff-qa.jukinmedia.com/" />
+<title>AgreementViewandSign</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AgreementViewandSign</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=terms_of_use_link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='229906488']</td>
+	<td>First</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='229906489']</td>
+	<td>Last</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='229906491']</td>
+	<td>555-555-5555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@name='229906490']</td>
+	<td>Address</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@onclick='RS.sign.largeSignaturePad.open();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=signature_pad_overlay</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='229906496']</td>
+	<td>First</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='229906497']</td>
+	<td>Last</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp1427411059121</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'26')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_signature</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='content']/p</td>
+	<td>Thank you for signing</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
